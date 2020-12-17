@@ -1,6 +1,6 @@
 package cn.hayring.algorithm.base;
 
-import cn.hayring.algorithm.base.sort.BubbleSort;
+import cn.hayring.algorithm.base.sort.QuickSort;
 import cn.hayring.algorithm.base.sort.MergeSort;
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ public class MainTest {
     @Test
     public void main() {
         System.out.println("Start");
-        Runnable toTest = new MergeSort();
+        Runnable toTest = new QuickSort();
         try{
             toTest.run();
         }

@@ -5,18 +5,7 @@ import org.apache.log4j.Level;
 import java.util.Comparator;
 
 public class BubbleSort extends Sort {
-    /**
-     * Test func
-     */
-    public void run() {
-        Integer[] src = new Integer[]{3,4,6,3,8,9,3,1,6,8,0};
-        sort(src);
-        StringBuilder builder = new StringBuilder();
-        for (Integer a : src) {
-            builder.append(a + " ");
-        }
-        logger.log(Level.INFO, builder.toString());
-    }
+
 
 
     public <T> void sort(T[] src, Comparator<T> comparator)  {
