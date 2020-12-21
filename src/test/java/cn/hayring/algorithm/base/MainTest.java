@@ -3,6 +3,7 @@ package cn.hayring.algorithm.base;
 import cn.hayring.algorithm.base.sort.HeapSort;
 import cn.hayring.algorithm.base.sort.QuickSort;
 import cn.hayring.algorithm.base.sort.MergeSort;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 public class MainTest {
@@ -23,6 +24,14 @@ public class MainTest {
         System.exit(0);
 
     }
+
+    @Test
+    public void tempTest() {
+        Integer[] tmp = Util.getSortedIntegerArray(20);
+        Util.showArray(tmp, Logger.getLogger(this.getClass()));
+    }
+
+
 
 
 }
