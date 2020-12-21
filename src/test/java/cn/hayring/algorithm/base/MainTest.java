@@ -1,5 +1,6 @@
 package cn.hayring.algorithm.base;
 
+import cn.hayring.algorithm.base.search.BinarySearch;
 import cn.hayring.algorithm.base.sort.HeapSort;
 import cn.hayring.algorithm.base.sort.QuickSort;
 import cn.hayring.algorithm.base.sort.MergeSort;
@@ -11,7 +12,7 @@ public class MainTest {
     @Test
     public void main() {
         System.out.println("Start");
-        Runnable toTest = new HeapSort();
+        Runnable toTest = new BinarySearch();
         try{
             toTest.run();
         }

@@ -16,7 +16,7 @@ public class Util {
     }
 
 
-    static Random random = new Random((int)System.currentTimeMillis());
+    public static Random random = new Random((int)System.currentTimeMillis());
 
     public static Integer[] getRadomIntegerArray(int maxValue) {
         Integer[] src = new Integer[10];
