@@ -15,10 +15,18 @@ public class SortTest {
         for (int i = 0; i < 10; i++) {
             src[i] = random.nextInt(100);
         }
-        Sort sorter = new HeapSort();
+        Sort sorter = new SelectSort();
         sorter.sort(src);
-        for (int i = 1; i < src.length; i++) {
-            assert src[i] >= src[i-1];
+        try {
+            for (int i = 1; i < src.length; i++) {
+                assert src[i] >= src[i-1];
+            }
+        } catch (AssertionError e) {
+            for (Integer i : src) {
+                System.out.print("-" + i);
+            }
+            System.out.println();
+            throw e;
         }
     }
 
